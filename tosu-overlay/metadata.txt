@@ -1,0 +1,7 @@
+Usecase: ingame
+Name: osu-getter-overlay
+Author: CaptSiro
+CompatibleWith: tosu
+Resolution: 1920 x 1080
+authorLinks: https://github.com/captsiro
+Notes: Let's you export beatmap files to specified location

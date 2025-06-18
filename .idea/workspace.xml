@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4b6fc14-ad61-436a-a56e-6e7d8a489b0e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/osu-getter-v2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/audio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/background.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paths.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tosu-overlay/fonts/Baloo2-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tosu-overlay/fonts/Baloo2-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tosu-overlay/fonts/FOT-YurukaStd-UB.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tosu-overlay/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tosu-overlay/js/Cache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tosu-overlay/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tosu-overlay/js/socket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tosu-overlay/metadata.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tosu-overlay/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2yfzL1EaZ9CnKGhiULq8zz66gBt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/programming/php/osu-getter-v2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "settings.editor.selected.configurable": "ssh.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\programming\php\osu-getter-v2\tosu-overlay" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\programming\php\osu-getter-v2\tosu-overlay\js" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4b6fc14-ad61-436a-a56e-6e7d8a489b0e" name="Changes" comment="" />
+      <created>1750240355605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750240355605</updated>
+      <workItem from="1750240356669" duration="4514000" />
+      <workItem from="1750244915437" duration="4443000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
