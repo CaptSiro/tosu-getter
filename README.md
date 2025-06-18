@@ -33,6 +33,10 @@ This will take a while...
 - Verify installation by visiting:  
   [http://localhost/tosu-getter](http://localhost/tosu-getter)  
   You should see a confirmation message.
+- Open the extracted `paths.php` file in a text editor. In File Explorer, navigate to the target directory. Click inside 
+  the address bar and copy the full path. Replace the placeholder path in `paths.php` with the copied one. Make sure 
+  it's inside **quotes**. It’s recommended (but not strictly required) to **escape backslashes** by doubling them: 
+  Change `\` to `\\` (e.g., `"C:\\wamp\\www\\tosu-getter"`).
 
 ---
 
