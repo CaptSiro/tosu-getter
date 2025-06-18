@@ -46,7 +46,7 @@ const getBackground = document.querySelector(".get-background");
 const getAudio = document.querySelector(".get-audio");
 
 getBackground.addEventListener("click", async () => {
-    const url = new URL("http://localhost/osu-getter-v2/background.php");
+    const url = new URL("http://localhost/tosu-getter/background.php");
     url.searchParams.set("source", cache.get(BACKGROUND_SOURCE));
     url.searchParams.set("name", cache.get(ARTIST) + " - " + cache.get(TITLE) + " (" + cache.get(ID) + ")");
 
@@ -54,7 +54,7 @@ getBackground.addEventListener("click", async () => {
 });
 
 getAudio.addEventListener("click", async () => {
-    const url = new URL("http://localhost/osu-getter-v2/audio.php");
+    const url = new URL("http://localhost/tosu-getter/audio.php");
     url.searchParams.set("source", cache.get(AUDIO_SOURCE));
     url.searchParams.set("name", cache.get(ARTIST) + " - " + cache.get(TITLE) + " (" + cache.get(ID) + ")");
 
