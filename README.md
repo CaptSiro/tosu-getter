@@ -6,9 +6,9 @@ osu! files (simple installation) or you can extract them to specific directories
 # tosu-Getter Installation Guide (v1.1+ simple)
 
 1. Download the latest **tosu-getter** `.zip` and extract the archive.
-2. Inside `tosu-getter`, find the `tosu-overlay` directory.
-3. Move or copy **the entire `tosu-overlay` folder** into tosu’s `static` directory:  
-   Example: `C:\Program Files (x86)\tosu-windows-v3.1.0\static\tosu-overlay`
+2. Inside `tosu-getter`, find the `tosu-getter-overlay` directory.
+3. Move or copy **the entire `tosu-getter-overlay` folder** into tosu’s `static` directory:  
+   Example: `C:\Program Files (x86)\tosu-windows-v3.1.0\static\tosu-getter-overlay`
 
 Note: The overlay does not work from tosu's overlay listing. You need to navigate to the overlay directly. Copy the URL
 under the overlay
@@ -53,9 +53,9 @@ This will take a while...
 
 ### 4. Enable the Overlay in tosu
 
-- Inside `tosu-getter`, find the `tosu-overlay` directory.
-- Move or copy **the entire `tosu-overlay` folder** into tosu’s `static` directory:  
-  Example: `path\to\tosu\static\tosu-overlay`
+- Inside `tosu-getter`, find the `tosu-getter-overlay` directory.
+- Move or copy **the entire `tosu-getter-overlay` folder** into tosu’s `static` directory:  
+  Example: `path\to\tosu\static\tosu-getter-overlay`
 - This adds the overlay to the tosu web interface.
 
 ---

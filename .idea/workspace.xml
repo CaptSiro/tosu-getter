@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4b6fc14-ad61-436a-a56e-6e7d8a489b0e" name="Changes" comment="Added LICENCE">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="a4b6fc14-ad61-436a-a56e-6e7d8a489b0e" name="Changes" comment="Implemented simple installation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tosu-overlay/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-overlay/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tosu-overlay/fonts/Baloo2-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-getter-overlay/fonts/Baloo2-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tosu-overlay/fonts/Baloo2-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-getter-overlay/fonts/Baloo2-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tosu-overlay/fonts/FOT-YurukaStd-UB.otf" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-getter-overlay/fonts/FOT-YurukaStd-UB.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tosu-overlay/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-getter-overlay/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tosu-overlay/js/Cache.js" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-getter-overlay/js/Cache.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tosu-overlay/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-getter-overlay/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tosu-overlay/js/socket.js" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-getter-overlay/js/socket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tosu-overlay/metadata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-getter-overlay/metadata.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tosu-overlay/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-getter-overlay/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +110,7 @@
       <workItem from="1751526739508" duration="618000" />
       <workItem from="1752589511555" duration="8000" />
       <workItem from="1753093921460" duration="3711000" />
-      <workItem from="1753178726486" duration="2194000" />
+      <workItem from="1753178726486" duration="3329000" />
     </task>
     <task id="LOCAL-00001" summary="Added &quot;simple&quot; installation guide">
       <option name="closed" value="true" />
@@ -123,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750252850233</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented simple installation">
+      <option name="closed" value="true" />
+      <created>1753181161347</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753181161347</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added &quot;simple&quot; installation guide" />
     <MESSAGE value="Added LICENCE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added LICENCE" />
+    <MESSAGE value="Implemented simple installation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented simple installation" />
   </component>
 </project>

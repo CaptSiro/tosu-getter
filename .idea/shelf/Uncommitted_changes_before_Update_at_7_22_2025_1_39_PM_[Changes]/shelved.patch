@@ -1,0 +1,115 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># tosu-getter\r\n\r\nOverlay with server code to get the currently playing beatmap audio and background. From version v1.1+ you can download\r\nosu! files (simple installation) or you can extract them to specific directories (complex installation)\r\n\r\n# tosu-Getter Installation Guide (v1.1+ simple)\r\n\r\n1. Download the latest **tosu-getter** `.zip` and extract the archive.\r\n2. Inside `tosu-getter`, find the `tosu-overlay` directory.\r\n3. Move or copy **the entire `tosu-overlay` folder** into tosu’s `static` directory:  \r\n   Example: `path\\to\\tosu\\static\\tosu-overlay`\r\n\r\nNote: The overlay does not work from tosu's overlay listing. You need to navigate to the overlay directly. Copy the URL\r\nunder the overlay\r\n\r\n# tosu-Getter Installation Guide (v1+ complex)\r\n\r\nThis will take a while...\r\n\r\n### 1. Install a Local PHP Server\r\n\r\n- **PHP 7.3+ required** (PHP 8.0+ recommended).\r\n- Recommended: [WampServer](http://wampserver.aviatechno.net/?lang=en)  \r\n  Download it under **\"Installers Wampserver full install version\"**.\r\n- Run the installer. If prompted, install any missing **Visual C++ Redistributables**.\r\n- If you encounter issues, search YouTube for **\"how to install WampServer\"**.\r\n\r\n---\r\n\r\n### 2. Set Up the Project Directory\r\n\r\n- Start WampServer.\r\n- Navigate to its web root directory:  \r\n  Usually `C:\\wamp\\www`\r\n- Create a new folder:  \r\n  `C:\\wamp\\www\\tosu-getter`\r\n\r\n---\r\n\r\n### 3. Download tosu-Getter\r\n\r\n- Download the latest **tosu-getter** `.zip`.\r\n- Extract all contents into `C:\\wamp\\www\\tosu-getter`.\r\n- Verify installation by visiting:  \r\n  [http://localhost/tosu-getter](http://localhost/tosu-getter)  \r\n  You should see a confirmation message.\r\n- Open the extracted `paths.php` file in a text editor. In File Explorer, navigate to the target directory. Click inside \r\n  the address bar and copy the full path. Replace the placeholder path in `paths.php` with the copied one. Make sure \r\n  it's inside **quotes**. It’s recommended (but not strictly required) to **escape backslashes** by doubling them: \r\n  Change `\\` to `\\\\` (e.g., `\"C:\\\\wamp\\\\www\\\\tosu-getter\"`).\r\n\r\n---\r\n\r\n### 4. Enable the Overlay in tosu\r\n\r\n- Inside `tosu-getter`, find the `tosu-overlay` directory.\r\n- Move or copy **the entire `tosu-overlay` folder** into tosu’s `static` directory:  \r\n  Example: `path\\to\\tosu\\static\\tosu-overlay`\r\n- This adds the overlay to the tosu web interface.\r\n\r\n---\r\n\r\n### 5. Use the Overlay\r\n\r\n- The overlay buttons are not clickable from within tosu.\r\n- Instead, copy the overlay's URL (displayed below it) and open it directly in your browser.\r\n\r\n---\r\n\r\n### Final Notes\r\n\r\n- **tosu and your PHP server must both be running** for the overlay to work.\r\n- You can configure WampServer to launch on system startup (not covered here).\r\n\r\n*(cleaned-up version of installation guide by ChatGPT)*\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision a3d61eda65bac3ec55ae0c1a590365109c454c1c)
++++ b/README.md	(date 1753184394514)
+@@ -6,9 +6,9 @@
+ # tosu-Getter Installation Guide (v1.1+ simple)
+ 
+ 1. Download the latest **tosu-getter** `.zip` and extract the archive.
+-2. Inside `tosu-getter`, find the `tosu-overlay` directory.
+-3. Move or copy **the entire `tosu-overlay` folder** into tosu’s `static` directory:  
+-   Example: `path\to\tosu\static\tosu-overlay`
++2. Inside `tosu-getter`, find the `tosu-getter-overlay` directory.
++3. Move or copy **the entire `tosu-getter-overlay` folder** into tosu’s `static` directory:  
++   Example: `path\to\tosu\static\tosu-getter-overlay`
+ 
+ Note: The overlay does not work from tosu's overlay listing. You need to navigate to the overlay directly. Copy the URL
+ under the overlay
+@@ -53,9 +53,9 @@
+ 
+ ### 4. Enable the Overlay in tosu
+ 
+-- Inside `tosu-getter`, find the `tosu-overlay` directory.
+-- Move or copy **the entire `tosu-overlay` folder** into tosu’s `static` directory:  
+-  Example: `path\to\tosu\static\tosu-overlay`
++- Inside `tosu-getter`, find the `tosu-getter-overlay` directory.
++- Move or copy **the entire `tosu-getter-overlay` folder** into tosu’s `static` directory:  
++  Example: `path\to\tosu\static\tosu-getter-overlay`
+ - This adds the overlay to the tosu web interface.
+ 
+ ---
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a4b6fc14-ad61-436a-a56e-6e7d8a489b0e\" name=\"Changes\" comment=\"Added LICENCE\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/README.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/README.md\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/lib.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/lib.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/tosu-overlay/js/main.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/tosu-overlay/js/main.js\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"JavaScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;CaptSiro&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/CaptSiro/tosu-getter.git&quot;,\r\n    &quot;accountId&quot;: &quot;3d43b787-e1ef-450d-8f49-7719693b97f9&quot;\r\n  }\r\n}</component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 8\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2yfzL1EaZ9CnKGhiULq8zz66gBt\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,\r\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/programming/php/tosu-getter&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\programming\\php\\osu-getter-v2\\tosu-overlay\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\programming\\php\\osu-getter-v2\\tosu-overlay\\js\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16\" />\r\n        <option value=\"bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a4b6fc14-ad61-436a-a56e-6e7d8a489b0e\" name=\"Changes\" comment=\"\" />\r\n      <created>1750240355605</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1750240355605</updated>\r\n      <workItem from=\"1750240356669\" duration=\"4514000\" />\r\n      <workItem from=\"1750244915437\" duration=\"4443000\" />\r\n      <workItem from=\"1750249627116\" duration=\"1020000\" />\r\n      <workItem from=\"1750250703322\" duration=\"2522000\" />\r\n      <workItem from=\"1750321159231\" duration=\"21000\" />\r\n      <workItem from=\"1751526739508\" duration=\"618000\" />\r\n      <workItem from=\"1752589511555\" duration=\"8000\" />\r\n      <workItem from=\"1753093921460\" duration=\"3711000\" />\r\n      <workItem from=\"1753178726486\" duration=\"2194000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Added &quot;simple&quot; installation guide\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750252195380</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750252195380</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added LICENCE\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750252850233</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750252850233</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Added &quot;simple&quot; installation guide\" />\r\n    <MESSAGE value=\"Added LICENCE\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added LICENCE\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a3d61eda65bac3ec55ae0c1a590365109c454c1c)
++++ b/.idea/workspace.xml	(date 1753181261362)
+@@ -4,13 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a4b6fc14-ad61-436a-a56e-6e7d8a489b0e" name="Changes" comment="Added LICENCE">
+-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/lib.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/tosu-overlay/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/tosu-overlay/js/main.js" afterDir="false" />
+-    </list>
++    <list default="true" id="a4b6fc14-ad61-436a-a56e-6e7d8a489b0e" name="Changes" comment="Implemented simple installation" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -105,7 +99,7 @@
+       <workItem from="1751526739508" duration="618000" />
+       <workItem from="1752589511555" duration="8000" />
+       <workItem from="1753093921460" duration="3711000" />
+-      <workItem from="1753178726486" duration="2194000" />
++      <workItem from="1753178726486" duration="2522000" />
+     </task>
+     <task id="LOCAL-00001" summary="Added &quot;simple&quot; installation guide">
+       <option name="closed" value="true" />
+@@ -123,7 +117,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1750252850233</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Implemented simple installation">
++      <option name="closed" value="true" />
++      <created>1753181161347</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1753181161347</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -143,6 +145,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Added &quot;simple&quot; installation guide" />
+     <MESSAGE value="Added LICENCE" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added LICENCE" />
++    <MESSAGE value="Implemented simple installation" />
++    <option name="LAST_COMMIT_MESSAGE" value="Implemented simple installation" />
+   </component>
+ </project>
+\ No newline at end of file
+diff --git a/tosu-overlay/metadata.txt b/tosu-getter-overlay/metadata.txt
+rename from tosu-overlay/metadata.txt
+rename to tosu-getter-overlay/metadata.txt
+diff --git a/tosu-overlay/js/Cache.js b/tosu-getter-overlay/js/Cache.js
+rename from tosu-overlay/js/Cache.js
+rename to tosu-getter-overlay/js/Cache.js
+diff --git a/tosu-overlay/js/socket.js b/tosu-getter-overlay/js/socket.js
+rename from tosu-overlay/js/socket.js
+rename to tosu-getter-overlay/js/socket.js
+diff --git a/tosu-overlay/js/main.js b/tosu-getter-overlay/js/main.js
+rename from tosu-overlay/js/main.js
+rename to tosu-getter-overlay/js/main.js
+diff --git a/tosu-overlay/index.html b/tosu-getter-overlay/index.html
+rename from tosu-overlay/index.html
+rename to tosu-getter-overlay/index.html
+diff --git a/tosu-overlay/style.css b/tosu-getter-overlay/style.css
+rename from tosu-overlay/style.css
+rename to tosu-getter-overlay/style.css

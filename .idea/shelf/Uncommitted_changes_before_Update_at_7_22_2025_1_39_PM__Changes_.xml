@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_7_22_2025_1_39_PM_[Changes]" date="1753184405500" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_22_2025_1_39_PM_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 7/22/2025 1:39 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="tosu-overlay/fonts/Baloo2-Bold.ttf" />
+    <option name="AFTER_PATH" value="tosu-getter-overlay/fonts/Baloo2-Bold.ttf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_22_2025_1_39_PM_[Changes]/Baloo2-Bold.ttf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="tosu-overlay/fonts/FOT-YurukaStd-UB.otf" />
+    <option name="AFTER_PATH" value="tosu-getter-overlay/fonts/FOT-YurukaStd-UB.otf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_22_2025_1_39_PM_[Changes]/FOT-YurukaStd-UB.otf" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="tosu-overlay/fonts/Baloo2-Medium.ttf" />
+    <option name="AFTER_PATH" value="tosu-getter-overlay/fonts/Baloo2-Medium.ttf" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_22_2025_1_39_PM_[Changes]/Baloo2-Medium.ttf" />
+  </binary>
+</changelist>
