@@ -8,7 +8,7 @@ osu! files (simple installation) or you can extract them to specific directories
 1. Download the latest **tosu-getter** `.zip` and extract the archive.
 2. Inside `tosu-getter`, find the `tosu-overlay` directory.
 3. Move or copy **the entire `tosu-overlay` folder** into tosu’s `static` directory:  
-   Example: `path\to\tosu\static\tosu-overlay`
+   Example: `C:\Program Files (x86)\tosu-windows-v3.1.0\static\tosu-overlay`
 
 Note: The overlay does not work from tosu's overlay listing. You need to navigate to the overlay directly. Copy the URL
 under the overlay
