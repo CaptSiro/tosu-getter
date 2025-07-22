@@ -50,7 +50,12 @@ getBackground.addEventListener("click", async () => {
     url.searchParams.set("source", cache.get(BACKGROUND_SOURCE));
     url.searchParams.set("name", cache.get(ARTIST) + " - " + cache.get(TITLE) + " (" + cache.get(ID) + ")");
 
-    await get(url);
+    if (await ping()) {
+        await get(url);
+        return;
+    }
+
+    await download(url);
 });
 
 getAudio.addEventListener("click", async () => {
@@ -58,7 +63,12 @@ getAudio.addEventListener("click", async () => {
     url.searchParams.set("source", cache.get(AUDIO_SOURCE));
     url.searchParams.set("name", cache.get(ARTIST) + " - " + cache.get(TITLE) + " (" + cache.get(ID) + ")");
 
-    await get(url);
+    if (await ping()) {
+        await get(url);
+        return;
+    }
+
+    await download(url);
 });
 
 async function get(url) {
@@ -74,7 +84,81 @@ async function get(url) {
     }
 }
 
+async function download(url) {
+    const response = await fetch(url.searchParams.get("source"));
+    if (!response.ok) {
+        alert("Could not download requested file");
+        return;
+    }
 
+    const blob = await response.blob();
+    const anchor = document.createElement("a");
+
+    anchor.download = url.searchParams.get("name") + '.' + await getFileExtension(blob);
+    anchor.href = URL.createObjectURL(blob);
+
+    anchor.click();
+}
+
+async function ping() {
+    const response = await fetch("http://localhost/tosu-getter/ping.php");
+    return response.ok;
+}
+
+
+
+async function getFileExtension(blob) {
+    const buffer = await blob.slice(0, 16).arrayBuffer();
+    const bytes = new Uint8Array(buffer);
+
+    // Image formats
+    if (bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4E && bytes[3] === 0x47) {
+        return "png";
+    }
+    if (bytes[0] === 0xFF && bytes[1] === 0xD8 && bytes[2] === 0xFF) {
+        return "jpg";
+    }
+    if (String.fromCharCode(...bytes.slice(0, 6)) === "GIF87a" ||
+        String.fromCharCode(...bytes.slice(0, 6)) === "GIF89a") {
+        return "gif";
+    }
+    if (bytes[0] === 0x42 && bytes[1] === 0x4D) {
+        return "bmp";
+    }
+    if (bytes[0] === 0x00 && bytes[1] === 0x00 && bytes[2] === 0x01 && bytes[3] === 0x00) {
+        return "ico";
+    }
+    if (
+        bytes[0] === 0x49 && bytes[1] === 0x49 && bytes[2] === 0x2A && bytes[3] === 0x00 ||
+        bytes[0] === 0x4D && bytes[1] === 0x4D && bytes[2] === 0x00 && bytes[3] === 0x2A
+    ) {
+        return "tif";
+    }
+
+    // Audio formats
+    if (String.fromCharCode(...bytes.slice(0, 3)) === "ID3" ||
+        (bytes[0] === 0xFF && (bytes[1] & 0xE0) === 0xE0)) {
+        return "mp3";
+    }
+    if (String.fromCharCode(...bytes.slice(0, 4)) === "OggS") {
+        return "ogg";
+    }
+    if (String.fromCharCode(...bytes.slice(8, 12)) === "WAVE") {
+        return "wav";
+    }
+    if (String.fromCharCode(...bytes.slice(4, 8)) === "ftyp") {
+        // MP4 container, check major brand
+        const brand = String.fromCharCode(...bytes.slice(8, 12));
+        if (brand.startsWith("M4A") || brand === "mp42" || brand === "isom") {
+            return "mp4";
+        }
+    }
+    if (String.fromCharCode(...bytes.slice(0, 4)) === "fLaC") {
+        return "flac";
+    }
+
+    return "bin";
+}
 
 function createBeatmapBackground(data) {
     const { directPath, folders } = data;

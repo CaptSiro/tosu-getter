@@ -201,6 +201,7 @@ function path(string $unsafe): string {
         '>' => '',
         '<' => '',
         '|' => '',
+        '?' => '',
     ]);
 }
 
